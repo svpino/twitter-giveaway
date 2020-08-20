@@ -21,7 +21,7 @@ def capture():
     retweets of the supplied status. Each time the function runs, it creates
     a new CSV file and stores it in the current folder.
     """
-    index = 199
+    index = 1
     while True:
         users = api.retweeters(STATUS)
         dataframe = pd.DataFrame(users)
